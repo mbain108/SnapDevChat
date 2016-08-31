@@ -140,6 +140,13 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 				}
 
 				AVCaptureVideoPreviewLayer *previewLayer = (AVCaptureVideoPreviewLayer *)self._previewView.layer;
+                
+                CGRect bounds = self.view.layer.bounds;
+                previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+                previewLayer.bounds = bounds;
+                previewLayer.position = CGPointMake(CGRectGetMidX(bounds), CGRectGetMidY(bounds));
+                previewLayer.connection.videoOrientation = initialVideoOrientation;
+                
 				previewLayer.connection.videoOrientation = initialVideoOrientation;
 			} );
 		}
@@ -455,6 +462,7 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 {
 	// Disable the Camera button until recording finishes, and disable the Record button until recording starts or finishes. See the
 	// AVCaptureFileOutputRecordingDelegate methods.
+    
     [self.delegate shouldEnableRecordUI:NO];
     [self.delegate shouldEnableCameraUI:NO];
 

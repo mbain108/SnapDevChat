@@ -19,4 +19,15 @@ class CameraVC: AAPLCameraViewController {
         super.viewDidLoad()
         
     }
+    
+    @IBAction func changeCameraButtonPressed(_ sender: AnyObject) {
+        
+        changeCamera()
+    }
+    
+    
+    @IBAction func recordButtonPressed(_ sender: AnyObject) {
+        print("this button was pressed")
+        toggleMovieRecording()
+    }
 }
