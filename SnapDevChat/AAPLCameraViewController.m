@@ -462,7 +462,6 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 {
 	// Disable the Camera button until recording finishes, and disable the Record button until recording starts or finishes. See the
 	// AVCaptureFileOutputRecordingDelegate methods.
-    
     [self.delegate shouldEnableRecordUI:NO];
     [self.delegate shouldEnableCameraUI:NO];
 
