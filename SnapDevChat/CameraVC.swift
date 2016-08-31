@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class CameraVC: AAPLCameraViewController, AAPLCameraVCDelegate {
     
@@ -21,6 +22,15 @@ class CameraVC: AAPLCameraViewController, AAPLCameraVCDelegate {
         
         super.viewDidLoad()
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        guard FIRAuth.auth()?.currentUser != nil else {
+            
+            performSegue(withIdentifier: "gotoLoginVC", sender: nil)
+            return
+        }
     }
     
     func shouldEnableCameraUI(_ enable: Bool) {

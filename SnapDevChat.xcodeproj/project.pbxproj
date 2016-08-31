@@ -10,6 +10,7 @@
 		4DC65020E14C56E8CF6FA92A /* Pods_SnapDevChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0667331B9C23852DC16733 /* Pods_SnapDevChat.framework */; };
 		E22FABD21D776B4B004DC85A /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22FABD11D776B4B004DC85A /* RoundedTextField.swift */; };
 		E22FABD41D777219004DC85A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22FABD31D777219004DC85A /* RoundedButton.swift */; };
+		E22FABD61D7775FA004DC85A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22FABD51D7775FA004DC85A /* LoginVC.swift */; };
 		E2823BF21D775F270058C678 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2823BF11D775F270058C678 /* GoogleService-Info.plist */; };
 		E2FA4E811D773B0D009D4FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA4E801D773B0D009D4FCC /* AppDelegate.swift */; };
 		E2FA4E831D773B0D009D4FCC /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA4E821D773B0D009D4FCC /* CameraVC.swift */; };
@@ -25,6 +26,7 @@
 		B5B0B355E022FA68AF35F5CB /* Pods-SnapDevChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapDevChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapDevChat/Pods-SnapDevChat.release.xcconfig"; sourceTree = "<group>"; };
 		E22FABD11D776B4B004DC85A /* RoundedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		E22FABD31D777219004DC85A /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		E22FABD51D7775FA004DC85A /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E2823BF11D775F270058C678 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E2FA4E7D1D773B0D009D4FCC /* SnapDevChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapDevChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FA4E801D773B0D009D4FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				E2FA4E991D773C8A009D4FCC /* AAPLCameraViewController.h */,
 				E2FA4E9A1D773C8A009D4FCC /* AAPLCameraViewController.m */,
 				E2FA4E821D773B0D009D4FCC /* CameraVC.swift */,
+				E22FABD51D7775FA004DC85A /* LoginVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				E2FA4E831D773B0D009D4FCC /* CameraVC.swift in Sources */,
 				E22FABD41D777219004DC85A /* RoundedButton.swift in Sources */,
+				E22FABD61D7775FA004DC85A /* LoginVC.swift in Sources */,
 				E2FA4E811D773B0D009D4FCC /* AppDelegate.swift in Sources */,
 				E22FABD21D776B4B004DC85A /* RoundedTextField.swift in Sources */,
 				E2FA4E9B1D773C8A009D4FCC /* AAPLCameraViewController.m in Sources */,

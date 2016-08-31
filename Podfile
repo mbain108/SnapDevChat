@@ -8,4 +8,5 @@ target 'SnapDevChat' do
   # Pods for SnapDevChat
 pod 'Firebase'
 pod 'Firebase/Storage'
+pod 'Firebase/Auth'
 end
