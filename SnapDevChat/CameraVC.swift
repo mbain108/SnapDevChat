@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CameraVC.swift
 //  SnapDevChat
 //
 //  Created by Melissa Bain on 8/31/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CameraVC: AAPLCameraViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

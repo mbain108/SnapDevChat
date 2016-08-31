@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		E2FA4E811D773B0D009D4FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA4E801D773B0D009D4FCC /* AppDelegate.swift */; };
-		E2FA4E831D773B0D009D4FCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA4E821D773B0D009D4FCC /* ViewController.swift */; };
+		E2FA4E831D773B0D009D4FCC /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA4E821D773B0D009D4FCC /* CameraVC.swift */; };
 		E2FA4E861D773B0D009D4FCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2FA4E841D773B0D009D4FCC /* Main.storyboard */; };
 		E2FA4E881D773B0D009D4FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2FA4E871D773B0D009D4FCC /* Assets.xcassets */; };
 		E2FA4E8B1D773B0D009D4FCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2FA4E891D773B0D009D4FCC /* LaunchScreen.storyboard */; };
+		E2FA4E9B1D773C8A009D4FCC /* AAPLCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FA4E9A1D773C8A009D4FCC /* AAPLCameraViewController.m */; };
+		E2FA4E9E1D773C9E009D4FCC /* AAPLPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FA4E9D1D773C9E009D4FCC /* AAPLPreviewView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E2FA4E7D1D773B0D009D4FCC /* SnapDevChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapDevChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FA4E801D773B0D009D4FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2FA4E821D773B0D009D4FCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2FA4E821D773B0D009D4FCC /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		E2FA4E851D773B0D009D4FCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2FA4E871D773B0D009D4FCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2FA4E8A1D773B0D009D4FCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2FA4E8C1D773B0D009D4FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2FA4E991D773C8A009D4FCC /* AAPLCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLCameraViewController.h; sourceTree = "<group>"; };
+		E2FA4E9A1D773C8A009D4FCC /* AAPLCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLCameraViewController.m; sourceTree = "<group>"; };
+		E2FA4E9C1D773C9E009D4FCC /* AAPLPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLPreviewView.h; sourceTree = "<group>"; };
+		E2FA4E9D1D773C9E009D4FCC /* AAPLPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLPreviewView.m; sourceTree = "<group>"; };
+		E2FA4E9F1D773CA7009D4FCC /* AAPLCameraVCDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAPLCameraVCDelegate.h; sourceTree = "<group>"; };
+		E2FA4EA01D773CC3009D4FCC /* SnapDevChat-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SnapDevChat-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,44 @@
 		E2FA4E7F1D773B0D009D4FCC /* SnapDevChat */ = {
 			isa = PBXGroup;
 			children = (
+				E2FA4E941D773C64009D4FCC /* Controller */,
+				E2FA4E931D773C5B009D4FCC /* Protocols */,
+				E2FA4E921D773C55009D4FCC /* View */,
 				E2FA4E801D773B0D009D4FCC /* AppDelegate.swift */,
-				E2FA4E821D773B0D009D4FCC /* ViewController.swift */,
 				E2FA4E841D773B0D009D4FCC /* Main.storyboard */,
 				E2FA4E871D773B0D009D4FCC /* Assets.xcassets */,
 				E2FA4E891D773B0D009D4FCC /* LaunchScreen.storyboard */,
+				E2FA4EA01D773CC3009D4FCC /* SnapDevChat-Bridging-Header.h */,
 				E2FA4E8C1D773B0D009D4FCC /* Info.plist */,
 			);
 			path = SnapDevChat;
+			sourceTree = "<group>";
+		};
+		E2FA4E921D773C55009D4FCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2FA4E9C1D773C9E009D4FCC /* AAPLPreviewView.h */,
+				E2FA4E9D1D773C9E009D4FCC /* AAPLPreviewView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E2FA4E931D773C5B009D4FCC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E2FA4E9F1D773CA7009D4FCC /* AAPLCameraVCDelegate.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		E2FA4E941D773C64009D4FCC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2FA4E991D773C8A009D4FCC /* AAPLCameraViewController.h */,
+				E2FA4E9A1D773C8A009D4FCC /* AAPLCameraViewController.m */,
+				E2FA4E821D773B0D009D4FCC /* CameraVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +135,7 @@
 					E2FA4E7C1D773B0D009D4FCC = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = JZ9G56K487;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2FA4E831D773B0D009D4FCC /* ViewController.swift in Sources */,
+				E2FA4E831D773B0D009D4FCC /* CameraVC.swift in Sources */,
 				E2FA4E811D773B0D009D4FCC /* AppDelegate.swift in Sources */,
+				E2FA4E9B1D773C8A009D4FCC /* AAPLCameraViewController.m in Sources */,
+				E2FA4E9E1D773C9E009D4FCC /* AAPLPreviewView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,11 +302,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = JZ9G56K487;
 				INFOPLIST_FILE = SnapDevChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.melissadbain.SnapDevChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SnapDevChat/SnapDevChat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,11 +318,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = JZ9G56K487;
 				INFOPLIST_FILE = SnapDevChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.melissadbain.SnapDevChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SnapDevChat/SnapDevChat-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
