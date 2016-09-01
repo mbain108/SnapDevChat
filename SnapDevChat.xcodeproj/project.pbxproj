@@ -11,6 +11,7 @@
 		E22FABD21D776B4B004DC85A /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22FABD11D776B4B004DC85A /* RoundedTextField.swift */; };
 		E22FABD41D777219004DC85A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22FABD31D777219004DC85A /* RoundedButton.swift */; };
 		E22FABD61D7775FA004DC85A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22FABD51D7775FA004DC85A /* LoginVC.swift */; };
+		E26DDE0C1D78890F00D9B375 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DDE0B1D78890F00D9B375 /* AuthService.swift */; };
 		E2823BF21D775F270058C678 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2823BF11D775F270058C678 /* GoogleService-Info.plist */; };
 		E2FA4E811D773B0D009D4FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA4E801D773B0D009D4FCC /* AppDelegate.swift */; };
 		E2FA4E831D773B0D009D4FCC /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA4E821D773B0D009D4FCC /* CameraVC.swift */; };
@@ -27,6 +28,7 @@
 		E22FABD11D776B4B004DC85A /* RoundedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		E22FABD31D777219004DC85A /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		E22FABD51D7775FA004DC85A /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		E26DDE0B1D78890F00D9B375 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E2823BF11D775F270058C678 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E2FA4E7D1D773B0D009D4FCC /* SnapDevChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapDevChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FA4E801D773B0D009D4FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E26DDE0A1D7888E500D9B375 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E26DDE0B1D78890F00D9B375 /* AuthService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		E2FA4E741D773B0D009D4FCC = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 			children = (
 				E2FA4E941D773C64009D4FCC /* Controller */,
 				E2FA4E931D773C5B009D4FCC /* Protocols */,
+				E26DDE0A1D7888E500D9B375 /* Services */,
 				E2FA4E921D773C55009D4FCC /* View */,
 				E2FA4E801D773B0D009D4FCC /* AppDelegate.swift */,
 				E2FA4E841D773B0D009D4FCC /* Main.storyboard */,
@@ -271,6 +282,7 @@
 				E22FABD21D776B4B004DC85A /* RoundedTextField.swift in Sources */,
 				E2FA4E9B1D773C8A009D4FCC /* AAPLCameraViewController.m in Sources */,
 				E2FA4E9E1D773C9E009D4FCC /* AAPLPreviewView.m in Sources */,
+				E26DDE0C1D78890F00D9B375 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
