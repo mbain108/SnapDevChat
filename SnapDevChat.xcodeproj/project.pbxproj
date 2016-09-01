@@ -12,6 +12,7 @@
 		E22FABD41D777219004DC85A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22FABD31D777219004DC85A /* RoundedButton.swift */; };
 		E22FABD61D7775FA004DC85A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22FABD51D7775FA004DC85A /* LoginVC.swift */; };
 		E26DDE0C1D78890F00D9B375 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DDE0B1D78890F00D9B375 /* AuthService.swift */; };
+		E26DDE0E1D789BEB00D9B375 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DDE0D1D789BEB00D9B375 /* DataService.swift */; };
 		E2823BF21D775F270058C678 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2823BF11D775F270058C678 /* GoogleService-Info.plist */; };
 		E2FA4E811D773B0D009D4FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA4E801D773B0D009D4FCC /* AppDelegate.swift */; };
 		E2FA4E831D773B0D009D4FCC /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA4E821D773B0D009D4FCC /* CameraVC.swift */; };
@@ -29,6 +30,7 @@
 		E22FABD31D777219004DC85A /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		E22FABD51D7775FA004DC85A /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E26DDE0B1D78890F00D9B375 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E26DDE0D1D789BEB00D9B375 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		E2823BF11D775F270058C678 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E2FA4E7D1D773B0D009D4FCC /* SnapDevChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapDevChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FA4E801D773B0D009D4FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				E26DDE0B1D78890F00D9B375 /* AuthService.swift */,
+				E26DDE0D1D789BEB00D9B375 /* DataService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26DDE0E1D789BEB00D9B375 /* DataService.swift in Sources */,
 				E2FA4E831D773B0D009D4FCC /* CameraVC.swift in Sources */,
 				E22FABD41D777219004DC85A /* RoundedButton.swift in Sources */,
 				E22FABD61D7775FA004DC85A /* LoginVC.swift in Sources */,
