@@ -31,6 +31,7 @@ class CameraVC: AAPLCameraViewController, AAPLCameraVCDelegate {
         guard FIRAuth.auth()?.currentUser != nil else {
             
             performSegue(withIdentifier: "gotoLoginVC", sender: nil)
+            
             return
         }
     }
@@ -57,13 +58,46 @@ class CameraVC: AAPLCameraViewController, AAPLCameraVCDelegate {
         print("Can start recording")
     }
     
+    func videoRecordingComplete(_ videoURL: URL!) {
+        
+        performSegue(withIdentifier: "gotoUsersVC", sender: ["videoURL": videoURL])
+    }
+    
+    func videoRecordingFailed() {
+        
+    }
+    
+    func snapshotTaken(_ snapshotData: Data!) {
+        
+        performSegue(withIdentifier: "gotoUsersVC", sender: ["snapshotData": snapshotData])
+    }
+    
+    func snapshotFailed() {
+        
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let UsersVC = segue.destination as? UsersVC {
+            if let videoDict = sender as? Dictionary<String, URL> {
+                let url = videoDict["videoURL"]
+                UsersVC.videoURL = url
+            } else if let snapDict = sender as? Dictionary<String, Data> {
+                let snapData = snapDict["snapshotData"]
+                UsersVC.snapData = snapData
+            }
+        }
+    }
+    
     @IBAction func changeCameraButtonPressed(_ sender: AnyObject) {
         
         changeCamera()
     }
     
     @IBAction func recordButtonPressed(_ sender: AnyObject) {
+        
         print("this button was pressed")
+        
         toggleMovieRecording()
     }
 }

@@ -573,6 +573,7 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
                 
                 [self.delegate snapshotTaken:imageData];
                 
+                // Saving photo to the phot album
                 /*
 				[PHPhotoLibrary requestAuthorization:^( PHAuthorizationStatus status ) {
 					if ( status == PHAuthorizationStatusAuthorized ) {
@@ -667,6 +668,8 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 	if ( success ) {
         
         [self.delegate videoRecordingComplete:outputFileURL];
+        
+        // This is all saving to the device
         /*
 		// Check authorization status.
 		[PHPhotoLibrary requestAuthorization:^( PHAuthorizationStatus status ) {

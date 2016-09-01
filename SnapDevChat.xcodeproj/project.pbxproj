@@ -13,7 +13,7 @@
 		E22FABD61D7775FA004DC85A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22FABD51D7775FA004DC85A /* LoginVC.swift */; };
 		E26DDE0C1D78890F00D9B375 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DDE0B1D78890F00D9B375 /* AuthService.swift */; };
 		E26DDE0E1D789BEB00D9B375 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DDE0D1D789BEB00D9B375 /* DataService.swift */; };
-		E26DDE101D78A96F00D9B375 /* UsersVS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DDE0F1D78A96F00D9B375 /* UsersVS.swift */; };
+		E26DDE101D78A96F00D9B375 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DDE0F1D78A96F00D9B375 /* UsersVC.swift */; };
 		E26DDE121D78AA9800D9B375 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DDE111D78AA9800D9B375 /* UserCell.swift */; };
 		E26DDE151D78ADB300D9B375 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DDE141D78ADB300D9B375 /* User.swift */; };
 		E2823BF21D775F270058C678 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2823BF11D775F270058C678 /* GoogleService-Info.plist */; };
@@ -34,7 +34,7 @@
 		E22FABD51D7775FA004DC85A /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E26DDE0B1D78890F00D9B375 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E26DDE0D1D789BEB00D9B375 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
-		E26DDE0F1D78A96F00D9B375 /* UsersVS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersVS.swift; sourceTree = "<group>"; };
+		E26DDE0F1D78A96F00D9B375 /* UsersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
 		E26DDE111D78AA9800D9B375 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		E26DDE141D78ADB300D9B375 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E2823BF11D775F270058C678 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 				E2FA4E9A1D773C8A009D4FCC /* AAPLCameraViewController.m */,
 				E2FA4E821D773B0D009D4FCC /* CameraVC.swift */,
 				E22FABD51D7775FA004DC85A /* LoginVC.swift */,
-				E26DDE0F1D78A96F00D9B375 /* UsersVS.swift */,
+				E26DDE0F1D78A96F00D9B375 /* UsersVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -300,7 +300,7 @@
 				E22FABD41D777219004DC85A /* RoundedButton.swift in Sources */,
 				E22FABD61D7775FA004DC85A /* LoginVC.swift in Sources */,
 				E2FA4E811D773B0D009D4FCC /* AppDelegate.swift in Sources */,
-				E26DDE101D78A96F00D9B375 /* UsersVS.swift in Sources */,
+				E26DDE101D78A96F00D9B375 /* UsersVC.swift in Sources */,
 				E22FABD21D776B4B004DC85A /* RoundedTextField.swift in Sources */,
 				E2FA4E9B1D773C8A009D4FCC /* AAPLCameraViewController.m in Sources */,
 				E26DDE151D78ADB300D9B375 /* User.swift in Sources */,

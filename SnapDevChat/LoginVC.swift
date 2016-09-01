@@ -27,7 +27,6 @@ class LoginVC: UIViewController {
                 guard errMsg == nil else {
                     
                     let alert = UIAlertController(title: "Error Authentication", message: errMsg, preferredStyle: .alert)
-
                     alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                     
@@ -38,11 +37,9 @@ class LoginVC: UIViewController {
             })
         } else {
             let alert = UIAlertController(title: "Username and Password Required", message: "You must enter both a username and a password", preferredStyle: .alert)
-            
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             
             present(alert, animated: true, completion: nil)
-            
         }
     }
 }

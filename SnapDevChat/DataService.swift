@@ -10,6 +10,7 @@ let FIR_CHILD_USERS = "users"
 
 import Foundation
 import FirebaseDatabase
+import FirebaseStorage
 
 class DataService {
     
@@ -28,6 +29,21 @@ class DataService {
     var usersRef: FIRDatabaseReference {
         
         return mainRef.child(FIR_CHILD_USERS)
+    }
+    
+    var mainStorageRef: FIRStorageReference {
+        
+        return FIRStorage.storage().reference(forURL: "gs://snapdevchat-b6e2e.appspot.com")
+    }
+    
+    var imagesStorageRef: FIRStorageReference {
+        
+        return mainStorageRef.child("images")
+    }
+    
+    var videoStorageRef: FIRStorageReference {
+        
+        return mainStorageRef.child("videos")
     }
     
     
