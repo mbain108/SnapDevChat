@@ -13,6 +13,9 @@
 		E22FABD61D7775FA004DC85A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22FABD51D7775FA004DC85A /* LoginVC.swift */; };
 		E26DDE0C1D78890F00D9B375 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DDE0B1D78890F00D9B375 /* AuthService.swift */; };
 		E26DDE0E1D789BEB00D9B375 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DDE0D1D789BEB00D9B375 /* DataService.swift */; };
+		E26DDE101D78A96F00D9B375 /* UsersVS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DDE0F1D78A96F00D9B375 /* UsersVS.swift */; };
+		E26DDE121D78AA9800D9B375 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DDE111D78AA9800D9B375 /* UserCell.swift */; };
+		E26DDE151D78ADB300D9B375 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DDE141D78ADB300D9B375 /* User.swift */; };
 		E2823BF21D775F270058C678 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2823BF11D775F270058C678 /* GoogleService-Info.plist */; };
 		E2FA4E811D773B0D009D4FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA4E801D773B0D009D4FCC /* AppDelegate.swift */; };
 		E2FA4E831D773B0D009D4FCC /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA4E821D773B0D009D4FCC /* CameraVC.swift */; };
@@ -31,6 +34,9 @@
 		E22FABD51D7775FA004DC85A /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E26DDE0B1D78890F00D9B375 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E26DDE0D1D789BEB00D9B375 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		E26DDE0F1D78A96F00D9B375 /* UsersVS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersVS.swift; sourceTree = "<group>"; };
+		E26DDE111D78AA9800D9B375 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		E26DDE141D78ADB300D9B375 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E2823BF11D775F270058C678 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E2FA4E7D1D773B0D009D4FCC /* SnapDevChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapDevChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FA4E801D773B0D009D4FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +84,14 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		E26DDE131D78AD9F00D9B375 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E26DDE141D78ADB300D9B375 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		E2FA4E741D773B0D009D4FCC = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				E2FA4E941D773C64009D4FCC /* Controller */,
+				E26DDE131D78AD9F00D9B375 /* Model */,
 				E2FA4E931D773C5B009D4FCC /* Protocols */,
 				E26DDE0A1D7888E500D9B375 /* Services */,
 				E2FA4E921D773C55009D4FCC /* View */,
@@ -121,6 +136,7 @@
 				E2FA4E9D1D773C9E009D4FCC /* AAPLPreviewView.m */,
 				E22FABD11D776B4B004DC85A /* RoundedTextField.swift */,
 				E22FABD31D777219004DC85A /* RoundedButton.swift */,
+				E26DDE111D78AA9800D9B375 /* UserCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -140,6 +156,7 @@
 				E2FA4E9A1D773C8A009D4FCC /* AAPLCameraViewController.m */,
 				E2FA4E821D773B0D009D4FCC /* CameraVC.swift */,
 				E22FABD51D7775FA004DC85A /* LoginVC.swift */,
+				E26DDE0F1D78A96F00D9B375 /* UsersVS.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -283,9 +300,12 @@
 				E22FABD41D777219004DC85A /* RoundedButton.swift in Sources */,
 				E22FABD61D7775FA004DC85A /* LoginVC.swift in Sources */,
 				E2FA4E811D773B0D009D4FCC /* AppDelegate.swift in Sources */,
+				E26DDE101D78A96F00D9B375 /* UsersVS.swift in Sources */,
 				E22FABD21D776B4B004DC85A /* RoundedTextField.swift in Sources */,
 				E2FA4E9B1D773C8A009D4FCC /* AAPLCameraViewController.m in Sources */,
+				E26DDE151D78ADB300D9B375 /* User.swift in Sources */,
 				E2FA4E9E1D773C9E009D4FCC /* AAPLPreviewView.m in Sources */,
+				E26DDE121D78AA9800D9B375 /* UserCell.swift in Sources */,
 				E26DDE0C1D78890F00D9B375 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
